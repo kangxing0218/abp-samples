@@ -27,7 +27,6 @@ public class BookStoreDbContextFactory : IDesignTimeDbContextFactory<BookStoreDb
         var builder = new ConfigurationBuilder()
             .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../Acme.BookStore.DbMigrator/"))
             .AddJsonFile("appsettings.json", optional: false);
-
         return builder.Build();
     }
 }
